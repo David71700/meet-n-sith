@@ -45,8 +45,8 @@ const Header = () => {
           <Link to="/" aria-current="page">
             Home
           </Link>
-          <Link to="/page2">Page2</Link>
-          <Link to="/page3">Page3</Link>
+          <Link to="/page2">Rencontres</Link>
+          <Link to="/page3">About Us</Link>
         </div>
       </div>
 
