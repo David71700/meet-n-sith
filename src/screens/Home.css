@@ -1,3 +1,28 @@
+.background {
+  background-image: url("../images/coeur.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* background-color: rgb(0, 0, 0); */
+  color: gold;
+  text-shadow: 1px 1px black;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .home {
-	margin-top: 20px;
+  margin: 0 30vw 0 30vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.home h1 {
+  margin-bottom: 6vh;
+}
+.home h2 {
+  margin-bottom: 6vh;
+}
+.home span {
+  text-decoration: line-through;
+}
+.home p {
+  font-size: 1.4rem;
 }
