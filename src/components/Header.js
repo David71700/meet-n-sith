@@ -5,23 +5,19 @@ import logo from "../images/logo.webp";
 import user from "./user.svg";
 
 const Header = () => {
-  useEffect(() => {
+  const toggleNav = () => {
     const hamburgerToggler = document.querySelector(".hamburger");
     const navLinksContainer = document.querySelector(".navlinks-container");
-    console.log(hamburgerToggler);
-    const toggleNav = () => {
-      hamburgerToggler.classList.toggle("open");
 
-      const ariaToggle =
-        hamburgerToggler.getAttribute("aria-expanded") === "true"
-          ? "false"
-          : "true";
-      hamburgerToggler.setAttribute("aria-expanded", ariaToggle);
+    hamburgerToggler.classList.toggle("open");
+    const ariaToggle =
+      hamburgerToggler.getAttribute("aria-expanded") === "true"
+        ? "false"
+        : "true";
+    hamburgerToggler.setAttribute("aria-expanded", ariaToggle);
+    navLinksContainer.classList.toggle("open");
+  };
 
-      navLinksContainer.classList.toggle("open");
-    };
-    hamburgerToggler.addEventListener("click", toggleNav);
-  }, []);
   return (
     <nav>
       <Link
@@ -31,8 +27,6 @@ const Header = () => {
         aria-current="page"
       >
         <img src={logo} alt="logo meet'n'sith" />
-        <span></span>
-        <span></span>
       </Link>
 
       <div class="main-navlinks">
@@ -41,6 +35,7 @@ const Header = () => {
           type="button"
           aria-label="Toggle navigation"
           aria-expanded="false"
+          onClick={() => toggleNav()}
         >
           <span></span>
           <span></span>
@@ -50,7 +45,6 @@ const Header = () => {
           <Link to="/" aria-current="page">
             Home
           </Link>
-
           <Link to="/page2">Page2</Link>
           <Link to="/page3">Page3</Link>
         </div>

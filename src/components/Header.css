@@ -37,7 +37,6 @@ nav {
 }
 .nav-icon img {
   width: 18vh;
-  
 }
 .hamburger {
   display: none;
@@ -65,7 +64,7 @@ nav {
 }
 
 .navlinks-container a:hover::after {
-  transform: scaleX(1)
+  transform: scaleX(1);
 }
 
 .nav-authentication {
@@ -80,7 +79,7 @@ nav {
   margin: 0 5px;
   border-radius: 5px;
   cursor: pointer;
-  border: none; 
+  border: none;
 }
 
 .sign-btns button:nth-child(1) {
@@ -168,7 +167,7 @@ nav {
   }
   .navlinks-container a {
     font-size: 18px;
-    margin: 10px 0
+    margin: 10px 0;
   }
 
   .nav-authentication {
@@ -186,9 +185,7 @@ nav {
   .sign-user img {
     width: 20px;
   }
-
 }
-
 
 @media (max-width: 500px) {
   .nav-icon img {
