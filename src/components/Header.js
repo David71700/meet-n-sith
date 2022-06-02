@@ -32,6 +32,7 @@ const Header = () => {
       >
         <img src={logo} alt="logo meet'n'sith" />
         <span></span>
+        <span></span>
       </Link>
 
       <div class="main-navlinks">

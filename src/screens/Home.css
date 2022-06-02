@@ -1,3 +1,23 @@
+.background {
+  background-image: url("../images/coeur.png"); 
+	background-repeat: no-repeat;
+  background-size: cover;
+	
+}
 .home {
-	margin-top: 20px;
+	margin: 2vh 30vw 2vh 30vw;
+}
+
+.home h1 {
+	margin-bottom: 6vh;
+}
+
+.home h2 {
+	margin-bottom: 6vh;
+}
+.home span {
+text-decoration: line-through;	
+}
+.home p {
+font-size: 1.4rem;	
 }
