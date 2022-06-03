@@ -17,7 +17,7 @@ const Page3 = () => {
             Il serait tout à fait possible d'aller aider Sangoku à combattre
             un nouveau méchant, puis aller prendre des cours de magie avec Harry Potter
             et passer une nuit avec miss Monde ou miss multivers (à vos risques et périls)
-            Et tout cela bien-sûr pour une modique somme hé hé hé...<br></br>
+            Et tout cela bien-sûr pour une modique somme<br></br>hé hé hé...<br></br>
             <br></br><br></br><br></br><br></br><br></br>
             Vous êtes encore là ?<br></br><br></br>
             Bon, alors on va vous présenter l'équipe qui a construit ce site:<br></br>
