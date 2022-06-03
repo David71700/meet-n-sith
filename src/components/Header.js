@@ -41,11 +41,13 @@ const Header = () => {
           <span></span>
         </button>
         <div class="navlinks-container">
-          <Link to="/" aria-current="page">
+          <Link aria-expanded="false" onClick={() => toggleNav()} to="/" aria-current="page">
             Home
           </Link>
+
           <Link to="/page2">Rencontres</Link>
           <Link to="/page3">About Us</Link>
+
         </div>
       </div>
 
