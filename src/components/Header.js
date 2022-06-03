@@ -1,7 +1,26 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../images/logo.webp";
-import user from "./user.svg";
+import theme from "../images/bluesaber.png";
+
+
+const blueText = document.querySelectorAll('.blue-text');
+// const redText = document.querySelectorAll('.red-text');
+const bgColor = document.querySelectorAll('.blue-background');
+
+function changeRed() {
+  blueText.forEach((e) => {
+    e.classList.toggle("red-text");
+  });
+  bgColor.forEach((e) => {
+    e.classList.toggle("red-background");
+  } )
+}
+// function changeBlue() {
+//   redText.forEach((e) => {
+//     e.classList.toggle("blue-text");
+//   });
+// }
 
 const Header = () => {
   const toggleNav = () => {
@@ -18,19 +37,19 @@ const Header = () => {
   };
 
   return (
-    <nav>
+    <nav className="blue-background">
       <Link
         to="#"
-        class="nav-icon"
+        className="nav-icon"
         aria-label="visit homepage"
         aria-current="page"
       >
         <img src={logo} alt="logo meet'n'sith" />
       </Link>
 
-      <div class="main-navlinks">
+      <div className="main-navlinks">
         <button
-          class="hamburger"
+          className="hamburger"
           type="button"
           aria-label="Toggle navigation"
           aria-expanded="false"
@@ -40,22 +59,24 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
-        <div class="navlinks-container">
-          <Link to="/" aria-current="page">
+        <div className="navlinks-container blue-background">
+          <Link aria-expanded="false" onClick={() => toggleNav()} to="/" aria-current="page">
             Home
           </Link>
+
           <Link to="/page2">Rencontres</Link>
-          <Link to="/page3">About Us</Link>
+          <Link to="/page3">À propos</Link>
+
         </div>
       </div>
 
-      <div class="nav-authentication">
-        <Link to="#" class="sign-user" aria-label="Sign in page">
-          <img src={user} alt="user-icon" />
+      <div className="nav-authentication">
+        <Link to="#" className="sign-user" onClick={() => changeRed()} aria-label="Sign in page">
+          <img src={theme} alt="lightsaber" />
         </Link>
-        <div class="sign-btns">
-          <button type="button">Sign In</button>
-          <button type="button">Sign Up</button>
+        <div className="sign-btns">
+          {/* <button onClick={() => changeBlue()} type="button">Jedi</button> */} 
+          <button onClick={() => changeRed()} type="button">Changer de Theme</button>
         </div>
       </div>
     </nav>
