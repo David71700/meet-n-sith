@@ -1,7 +1,26 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../images/logo.webp";
-import user from "./user.svg";
+import theme from "../images/bluesaber.png";
+
+
+const blueText = document.querySelectorAll('.blue-text');
+// const redText = document.querySelectorAll('.red-text');
+const bgColor = document.querySelectorAll('.blue-background');
+
+function changeRed() {
+  blueText.forEach((e) => {
+    e.classList.toggle("red-text");
+  });
+  bgColor.forEach((e) => {
+    e.classList.toggle("red-background");
+  } )
+}
+// function changeBlue() {
+//   redText.forEach((e) => {
+//     e.classList.toggle("blue-text");
+//   });
+// }
 
 const Header = () => {
   const toggleNav = () => {
@@ -18,7 +37,7 @@ const Header = () => {
   };
 
   return (
-    <nav>
+    <nav className="blue-background">
       <Link
         to="#"
         className="nav-icon"
@@ -40,24 +59,24 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
-        <div className="navlinks-container">
+        <div className="navlinks-container blue-background">
           <Link aria-expanded="false" onClick={() => toggleNav()} to="/" aria-current="page">
             Home
           </Link>
 
           <Link to="/page2">Rencontres</Link>
-          <Link to="/page3">About Us</Link>
+          <Link to="/page3">À propos</Link>
 
         </div>
       </div>
 
       <div className="nav-authentication">
-        <Link to="#" className="sign-user" aria-label="Sign in page">
-          <img src={user} alt="user-icon" />
+        <Link to="#" className="sign-user" onClick={() => changeRed()} aria-label="Sign in page">
+          <img src={theme} alt="lightsaber" />
         </Link>
         <div className="sign-btns">
-          <button type="button">Sign In</button>
-          <button type="button">Sign Up</button>
+          {/* <button onClick={() => changeBlue()} type="button">Jedi</button> */} 
+          <button onClick={() => changeRed()} type="button">Changer de Theme</button>
         </div>
       </div>
     </nav>

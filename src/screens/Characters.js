@@ -29,12 +29,12 @@ const filtredDataBySpecies = (speciesType) => {
   
   return (
     <div className="Characters">
-      <h1>Bienvenue!!!</h1>
-      <p>Souhaitez-vous rencontrer un homme rasé ou une femme toute poilue?</p>
+      <h1 className="h1p2">Bienvenue!!!</h1>
+      <p className="pp2">Souhaitez-vous rencontrer un homme rasé ou une femme toute poilue?</p>
          
       <button onClick={() => filtredDataByGender("male")} className="male"> ♂ (rasé)</button>
       <button onClick={() => filtredDataByGender("female")} className="female"> ♀ (poilue)</button>
-      <button onClick={() => filtredDataBySpecies("droid")} className="female"> ♀ (Droid)</button>
+      <button onClick={() => filtredDataBySpecies("droid")} className="droid">&#x1F916;(Droid)</button>
      
      {/* {characters.filter((profil) => profil.gender === "male").map((character) => {
         return <Card character={character} />
