@@ -1,5 +1,9 @@
+import Image from "../images/team3.jpg"
 import "./Page3.css";
 
+const ImageTeam = () => {
+  return <img src={Image} alt="us"></img>;
+}
 const Page3 = () => {
   return (
     <><div className="fade"> </div>
@@ -21,8 +25,9 @@ const Page3 = () => {
             <br></br><br></br><br></br><br></br><br></br>
             Vous êtes encore là ?<br></br><br></br>
             Bon, alors on va vous présenter l'équipe qui a construit ce site:<br></br>
-            David Tharot, Jonathan Rilos, Joshua Dupin,<br></br>
-            Rémi Samson et Fabrice Dupont.
+            <div>{ImageTeam()}</div>
+            Rémi Samson, Joshua Dupin, <br></br>Jonathan Rilos, David Tharot,
+            <br></br> et Fabrice Dupont.
             <br></br><br></br><br></br>
             Merci à tous ceux qui nous ont apporté leur aide.<br></br><br></br>
             Et merci à vous d'avoir lu jusqu'au bout ! ;-)

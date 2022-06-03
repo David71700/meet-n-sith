@@ -3,11 +3,6 @@ body {
     height: 100%;
     background: #000;
     background-color: rgb(0, 0, 0);
-<<<<<<< HEAD
-    /*overflow: hidden;*/
-=======
-    /* overflow: hidden; */
->>>>>>> dev
   }
   
   .fade {
@@ -38,7 +33,7 @@ body {
     position: relative;
     top: 9999px;
     transform-origin: 50% 100%;
-    animation: crawl 135s linear;
+    animation: crawl 120s linear;
   }
   
   .crawl > .title {
