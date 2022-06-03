@@ -1,9 +1,11 @@
 .card {
     margin: 50px;
+    border:solid 1px white;
 }
 
 .imgProfil {
-    width: 300px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .global-card {

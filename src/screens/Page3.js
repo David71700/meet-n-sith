@@ -8,15 +8,16 @@ const Page3 = () => {
       <div class="crawl">
 
         <div class="title"><h1>Futures destinations...</h1>
+        
           <p>
             Etant donné que les siths commencent à conquérir d'autres univers,
             il se pourrait bien qu'on mette la main sur leur dernier prototype
             pour vous proposer d'autres destinations de rêve !
           </p>
           <p>Imaginez donc toutes les choses que vous pourriez réaliser !!
-            Il serait tout à fait possible d'aller aider Sangoku à combattre
-            un nouveau méchant, puis aller prendre des cours de magie avec Harry Potter
-            et passer une nuit avec miss Monde ou miss multivers (à vos risques et périls)
+            Il serait tout à fait possible d'aller aider Sangoku à combattre encore
+            un nouveau méchant pas beau, puis aller prendre des cours de magie avec Harry Plotter
+            et passer une nuit avec miss multivers qui pue la patate (à vos risques et périls)
             Et tout cela bien-sûr pour une modique somme hé hé hé...<br></br>
             <br></br><br></br><br></br><br></br><br></br>
             Vous êtes encore là ?<br></br><br></br>
@@ -30,6 +31,7 @@ const Page3 = () => {
           <p>
             
           </p>
+          
         </div>
       </div>
     </section></>
