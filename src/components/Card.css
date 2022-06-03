@@ -1,3 +1,17 @@
 .card {
-    width: 200px;
+    margin: 50px;
+}
+
+.imgProfil {
+    width: 300px;
+}
+
+.global-card {
+        display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.textColor {
+    color: white;
 }
