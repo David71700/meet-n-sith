@@ -21,16 +21,16 @@ const Header = () => {
     <nav>
       <Link
         to="#"
-        class="nav-icon"
+        className="nav-icon"
         aria-label="visit homepage"
         aria-current="page"
       >
         <img src={logo} alt="logo meet'n'sith" />
       </Link>
 
-      <div class="main-navlinks">
+      <div className="main-navlinks">
         <button
-          class="hamburger"
+          className="hamburger"
           type="button"
           aria-label="Toggle navigation"
           aria-expanded="false"
@@ -40,7 +40,7 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
-        <div class="navlinks-container">
+        <div className="navlinks-container">
           <Link aria-expanded="false" onClick={() => toggleNav()} to="/" aria-current="page">
             Home
           </Link>
@@ -51,11 +51,11 @@ const Header = () => {
         </div>
       </div>
 
-      <div class="nav-authentication">
-        <Link to="#" class="sign-user" aria-label="Sign in page">
+      <div className="nav-authentication">
+        <Link to="#" className="sign-user" aria-label="Sign in page">
           <img src={user} alt="user-icon" />
         </Link>
-        <div class="sign-btns">
+        <div className="sign-btns">
           <button type="button">Sign In</button>
           <button type="button">Sign Up</button>
         </div>
