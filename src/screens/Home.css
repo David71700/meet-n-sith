@@ -1,39 +1,52 @@
+
+
 body {
   background-color: black;
-  z-index: 50;
+
 }
 
 .background {
-    z-index: 100;
+  
     display: flex;
-    margin:auto;
     align-items: center;
-    background-image: url("../images/coeur.png");
+    background-image:linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url("../images/coeur.png");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 8px 8px 8px 8px black;
     color: gold;
     text-shadow: 1px 1px black;
     background-color: black;
-    min-height: 100vh;
+    min-height: 80vh;
     max-width: 100%;
     
   }
 
 .home {
-  margin: 0 30vw 0 30vw;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+  max-width: 72ch;
+  margin-inline: auto;
+
 }
 .home h1 {
-  margin-bottom: 6vh;
+  margin-bottom: 1.5em;
+  color:white;
+  font-size: 3rem;
+  
 }
 .home h2 {
-  margin-bottom: 6vh;
+  margin-bottom: 10vh;
+  color: white;
+  font-size: 1.7rem;
 }
 .home span {
   text-decoration: line-through;
 }
 .home p {
+  color: white;
   font-size: 1.4rem;
 }
