@@ -33,10 +33,6 @@ const Page3 = () => {
             Merci à tous ceux qui nous ont apporté leur aide.<br></br><br></br>
             Et merci à vous d'avoir lu jusqu'au bout ! ;-)
           </p>
-          <p>
-            
-          </p>
-          
         </div>
       </div>
     </section></>
