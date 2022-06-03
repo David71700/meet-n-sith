@@ -9,7 +9,7 @@ const DisplayChara = () => {
 		fetch(`https://miadil.github.io/starwars-api/api/id/${id}.json`)
 			.then((res) => res.json())
 			.then((res) => console.log(res) || setCharacter(res))
-	}, [])
+	}, )
 	return <div>
 		poulet : {character.name}
 		<img src={character.image} alt={character.name} />
